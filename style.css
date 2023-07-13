@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  background: #F5F5F5;
+  font-family: 'Raleway', sans-serif;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.link:hover{
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.contenedor{
+  padding: 16px 5vw;
+}
+
+.cabecera{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.cabecera--titulo{
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.cabecera--menu{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.descripcion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.descripcion--contenedor{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60vw;
+
+}
+
+.descripcion--titulo{
+  font-size: 52px;
+  font-weight: 700;
+  
+}
+
+.descripcion--descripcion{
+  font-size: 22px;
+  
+}
+
+.descripcion--links{
+  display: flex;
+  gap: 20px;
+}
+
+.skillsContainer{
+  margin: 20px;
+  display: grid;
+  width: 90vw;
+  grid-template-columns: repeat(auto-fill, 120px);
+  gap: 20px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  box-shadow: 10px 10px 20px rgba(110, 110, 110, 0.521);
+  justify-content: end;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card--icon{
+  width: 30px;
+  height: 30px;
+}
+
+.card--titulo{
+  font-size: 14px;
+}
