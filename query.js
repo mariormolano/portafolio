@@ -8,11 +8,13 @@ const skillsContainer = document.getElementById("skillsContainer");
 const datos = async (type) => {
   let data;
   //solicitar datos de la api
-  await fetch(`http://localhost:8000/${type}`)
-  // solicitar el JSON
+  await fetch(`https://portafolio-blond-three.vercel.app/${type}`)
+    // solicitar el JSON
     .then((peticion) => peticion.json())
-  // Guardar la respuesta en una variable
-    .then((respueta) => {(data = respueta)});
+    // Guardar la respuesta en una variable
+    .then((respueta) => {
+      data = respueta;
+    });
   // retornar la respuesta
   return data;
 };
